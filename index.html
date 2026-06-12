@@ -1,71 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LINZO GAMING STORE</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINZO TOPUP - Sri Lanka's Cheapest & Instant Diamond Topup</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .brand-font {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 0.05em;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Geometric angled background splitter at the bottom of hero */
+        .hero-skew {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: #ffffff;
+            clip-path: polygon(0 100%, 100% 100%, 100% 40%, 0 0);
+        }
+    </style>
 </head>
-<body>
+<body class="text-slate-800">
 
-<header>
-    <h1>LINZO GAMING STORE</h1>
-    <p>Free Fire Account Seller & Diamond Top Up</p>
-</header>
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-40 border-b border-slate-100 px-4 py-3 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <button class="text-xl p-1 text-slate-700 hover:bg-slate-100 rounded-md md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <span class="text-2xl text-blue-600 brand-font tracking-wider">LINZO <span class="text-slate-800 text-xl font-sans font-extrabold italic block -mt-2 text-center">Topup</span></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="border border-slate-200 rounded-full px-3 py-1 flex items-center space-x-1 text-sm bg-slate-50 cursor-pointer">
+                    <i class="fa-solid fa-globe text-blue-500"></i>
+                    <span class="font-semibold text-slate-700">EN</span>
+                    <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+                </div>
+                <button class="bg-blue-50 text-blue-600 hover:bg-blue-100 font-bold px-5 py-2 rounded-lg text-sm transition shadow-sm">LOGIN</button>
+            </div>
+        </div>
+    </nav>
 
-<section class="hero">
-    <img src="images/banner.jpg" alt="Banner">
+    <header class="hero-bg text-white pt-16 pb-24 text-center px-4 relative">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter uppercase leading-none drop-shadow-md">
+                FREE FIRE DIAMOND TOPUP <br> SRI LANKA
+            </h1>
+            <p class="text-2xl md:text-4xl font-black italic tracking-wide text-yellow-300 mt-2 uppercase drop-shadow">
+                INSTANT & CHEAPEST
+            </p>
+            <p class="text-xs md:text-sm text-blue-100 max-w-xl mx-auto mt-6 tracking-wide leading-relaxed font-medium">
+                SRI LANKA'S CHEAPEST FREE FIRE DIAMONDS - INSTANT AUTO DELIVERY VIA <br>
+                EZCASH, VISA, MASTERCARD, AMEX, BANK TRANSFER & LANKAQR
+            </p>
+            <div class="mt-8">
+                <a href="#topup-selection" class="bg-white text-blue-600 font-extrabold px-8 py-3 rounded-lg shadow-xl hover:bg-blue-50 transition tracking-wider uppercase inline-block text-sm">
+                    TOP UP NOW
+                </a>
+            </div>
+        </div>
+        <div class="hero-skew"></div>
+    </header>
 
-    <div class="content">
-        <h2>100% Trusted Service</h2>
-        <p>Buy Free Fire Accounts & Diamond Top Ups Safely</p>
+    <section class="bg-white -mt-8 relative z-20 shadow-md max-w-6xl mx-auto rounded-xl grid grid-cols-2 md:grid-cols-4 gap-4 p-4 text-center border border-slate-100">
+        <div class="flex items-center justify-center space-x-2 border-r border-slate-100 last:border-0 py-2">
+            <i class="fa-solid fa-users text-blue-500 text-lg"></i>
+            <span class="text-xs font-bold text-slate-600 tracking-wide uppercase">10K+ TRUSTED USERS</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2 border-r border-slate-100 last:border-0 py-2">
+            <i class="fa-solid fa-headset text-blue-500 text-lg"></i>
+            <span class="text-xs font-bold text-slate-600 tracking-wide uppercase">24/7 SUPPORT</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2 border-r border-slate-100 last:border-0 py-2">
+            <i class="fa-solid fa-bolt text-blue-500 text-lg"></i>
+            <span class="text-xs font-bold text-slate-600 tracking-wide uppercase">INSTANT DELIVERY</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2 py-2">
+            <i class="fa-solid fa-shield-halved text-blue-500 text-lg"></i>
+            <span class="text-xs font-bold text-slate-600 tracking-wide uppercase">SECURE PAYMENTS</span>
+        </div>
+    </section>
 
-        <a href="https://wa.me/94774881940" class="btn">
-            Contact on WhatsApp
-        </a>
+    <section id="topup-selection" class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold uppercase tracking-tight">CHOOSE YOUR <span class="text-blue-600">TOP-UP</span></h2>
+        <p class="text-slate-400 font-bold text-xs tracking-wider mt-2 uppercase">SELECT A PRODUCT AND VERIFY YOUR PLAYER ID TO CONTINUE.</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mt-10">
+            <div class="border-2 border-blue-500 bg-blue-50/50 rounded-xl p-4 flex flex-col items-center justify-center cursor-pointer shadow-sm relative">
+                <div class="w-16 h-16 bg-blue-400 rounded-xl mb-2 flex items-center justify-center text-white text-2xl font-bold shadow-inner">FF</div>
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">FREE FIRE</span>
+            </div>
+            <div class="border border-slate-200 bg-slate-50/50 rounded-xl p-4 flex flex-col items-center justify-center opacity-60 relative cursor-not-allowed">
+                <div class="w-16 h-16 bg-amber-200 rounded-xl mb-2 flex items-center justify-center text-amber-700 text-2xl"><i class="fa-solid fa-shell"></i></div>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">COMING SOON</span>
+            </div>
+            <div class="border border-slate-200 bg-slate-50/50 rounded-xl p-4 flex flex-col items-center justify-center opacity-60 relative cursor-not-allowed">
+                <div class="w-16 h-16 bg-slate-300 rounded-xl mb-2 flex items-center justify-center text-slate-700 text-xl font-bold">COD</div>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">COMING SOON</span>
+            </div>
+            <div class="border border-slate-200 bg-slate-50/50 rounded-xl p-4 flex flex-col items-center justify-center opacity-60 relative cursor-not-allowed">
+                <div class="w-16 h-16 bg-slate-300 rounded-xl mb-2 flex items-center justify-center text-slate-700 text-xl font-bold">PUBG</div>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">COMING SOON</span>
+            </div>
+        </div>
+
+        <div class="max-w-xl mx-auto mt-10 flex flex-col sm:flex-row gap-2">
+            <input type="text" placeholder="ENTER YOUR PLAYER ID (UID)" class="border border-slate-300 rounded-xl px-4 py-3 flex-grow focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono tracking-widest text-center shadow-inner uppercase">
+            <button class="bg-blue-400 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl uppercase tracking-wider transition text-sm shadow">VERIFY UID</button>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 pb-24 space-y-16">
+        
+        <div>
+            <div class="bg-slate-100 rounded-lg p-3 text-center mb-6 flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-box-open text-blue-500 text-sm"></i>
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">SUBSCRIPTIONS & BUNDLES</span>
+                <i class="fa-solid fa-box-open text-blue-500 text-sm"></i>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-cubes text-4xl text-blue-400 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">WEEKLY LITE</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.140</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.150</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('WEEKLY LITE', 140)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-cubes text-4xl text-purple-400 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">WEEKLY MEMBERSHIP</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.570</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.580</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('WEEKLY MEMBERSHIP', 570)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-cubes text-4xl text-amber-400 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">MONTHLY MEMBERSHIP</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.2,790</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.2,850</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('MONTHLY MEMBERSHIP', 2790)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-boxes-packing text-4xl text-cyan-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">WEEKLY MAX</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.670</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.730</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('WEEKLY MAX', 670)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-crown text-4xl text-yellow-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">VIP BUNDLE</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.3,360</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.3,430</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('VIP BUNDLE', 3360)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bg-slate-100 rounded-lg p-3 text-center mb-6 flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-bolt text-blue-500 text-sm"></i>
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">EVOS & LEVEL UP PASSES</span>
+                <i class="fa-solid fa-bolt text-blue-500 text-sm"></i>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm group">
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-fire text-4xl text-red-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">EVO ACCESS 3D</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.300.00</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('EVO ACCESS 3D', 300)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm group">
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-fire text-4xl text-red-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">EVO ACCESS 7D</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.450.00</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('EVO ACCESS 7D', 450)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm group">
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-fire text-4xl text-red-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">EVO ACCESS 30D</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.1000.00</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('EVO ACCESS 30D', 1000)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm group">
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-stairs text-4xl text-indigo-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">LEVEL UP PASS LVL 6</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.175.00</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('LEVEL UP PASS LVL 6', 175)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm group">
+                    <div class="my-4 flex justify-center"><i class="fa-solid fa-stairs text-4xl text-indigo-500 group-hover:scale-110 transition"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">LEVEL UP PASS LVL 10</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.350.00</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('LEVEL UP PASS LVL 10', 350)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="bg-slate-100 rounded-lg p-3 text-center mb-6 flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-gem text-blue-500 text-sm"></i>
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">DIAMONDS</span>
+                <i class="fa-solid fa-gem text-blue-500 text-sm"></i>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center text-cyan-400 group-hover:scale-110 transition"><i class="fa-solid fa-gem text-3xl"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">25 DIAMONDS</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.85</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.90</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('25 DIAMONDS', 85)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center text-cyan-400 group-hover:scale-110 transition"><i class="fa-solid fa-gem text-3xl"></i><i class="fa-solid fa-gem text-2xl -ml-2"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">100 DIAMONDS</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.310</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.330</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('100 DIAMONDS', 310)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center text-cyan-500 group-hover:scale-110 transition"><i class="fa-solid fa-gem text-4xl"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">310 DIAMONDS</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.930</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.980</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('310 DIAMONDS', 930)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center text-blue-500 group-hover:scale-110 transition"><i class="fa-solid fa-vault text-4xl"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">520 DIAMONDS</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.1,560</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.1,640</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('520 DIAMONDS', 1560)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-xl p-4 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+                    <span class="absolute top-0 right-0 bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded-bl uppercase">LIMITED TIME</span>
+                    <div class="my-4 flex justify-center text-blue-600 group-hover:scale-110 transition"><i class="fa-solid fa-box-tissue text-4xl"></i></div>
+                    <div>
+                        <h4 class="text-slate-400 text-[10px] font-bold uppercase tracking-wider">1060 DIAMONDS</h4>
+                        <div class="flex items-baseline space-x-2 mt-1">
+                            <span class="text-blue-600 font-extrabold text-lg">RS.3,100</span>
+                            <span class="text-slate-300 line-through text-xs">Rs.3,230</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart('1060 DIAMONDS', 3100)" class="w-100 mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg text-xs uppercase tracking-wider transition">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-slate-50 border-t border-b border-slate-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold uppercase">WHY CHOOSE <span class="text-blue-600">LINZO TOPUP</span>?</h2>
+            <p class="text-sm text-slate-500 mt-1 font-medium">Sri Lanka's #1 trusted Free Fire topup service trusted by 10000+ gamers</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-12 text-left">
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h4 class="font-bold text-base mb-1">Instant Delivery in Seconds</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Diamonds arrive automatically in your Free Fire account as soon as payment is confirmed.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                    <h4 class="font-bold text-base mb-1">No Password Required</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Only your Player UID is needed. No password, email, or login details required.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h4 class="font-bold text-base mb-1">Cheapest in Sri Lanka</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Get FF diamonds at lower prices than any other topup site in Sri Lanka.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-qrcode"></i></div>
+                    <h4 class="font-bold text-base mb-1">EzCash & LankaQR</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Pay via EzCash, LankaQR (Genie QR), Visa, MasterCard, or bank transfer - whatever is easiest.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4 class="font-bold text-base mb-1">Registered Sri Lankan Business</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">LINZO Topup is a registered business in Sri Lanka. The #1 topup service trusted by 10000+ players.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-4"><i class="fa-solid fa-headset"></i></div>
+                    <h4 class="font-bold text-base mb-1">24/7 Support</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Contact us anytime via WhatsApp at <strong>+94774881940</strong> if you have any issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-extrabold uppercase">LOOK <span class="text-blue-600">WHO'S LEADING</span></h2>
+        <p class="text-slate-400 font-bold text-[10px] tracking-widest uppercase mt-1">JUNE 2026 • TOP SPENDERS THIS MONTH</p>
+        
+        <div class="flex flex-col sm:flex-row items-end justify-center space-y-8 sm:space-y-0 sm:space-x-6 mt-12 max-w-xl mx-auto">
+            <div class="flex flex-col items-center w-full sm:w-1/3 order-2 sm:order-1">
+                <div class="w-12 h-12 rounded-full bg-slate-200 border-2 border-purple-400 flex items-center justify-center font-bold text-slate-700">JP</div>
+                <span class="text-xs font-bold mt-2 text-slate-700">Jayan Prabhath</span>
+                <span class="text-xs text-blue-600 font-bold">Rs.50.6K</span>
+                <div class="bg-slate-200 w-full h-24 rounded-t-lg mt-2 shadow-inner flex items-center justify-center text-slate-400 font-extrabold text-2xl">2</div>
+            </div>
+            <div class="flex flex-col items-center w-full sm:w-1/3 order-1 sm:order-2 scale-105 relative z-10">
+                <div class="absolute -top-6 text-yellow-500 text-xl"><i class="fa-solid fa-crown"></i></div>
+                <div class="w-14 h-14 rounded-full bg-slate-200 border-4 border-yellow-400 flex items-center justify-center font-bold text-slate-700">DD</div>
+                <span class="text-xs font-bold mt-2 text-slate-700">Danidu Dissanayaka</span>
+                <span class="text-xs text-blue-600 font-bold">Rs.64.0K</span>
+                <div class="bg-blue-100 w-full h-32 rounded-t-lg mt-2 shadow-md flex items-center justify-center text-blue-400 font-extrabold text-3xl">1</div>
+            </div>
+            <div class="flex flex-col items-center w-full sm:w-1/3 order-3">
+                <div class="w-11 h-11 rounded-full bg-slate-200 border-2 border-amber-500 flex items-center justify-center font-bold text-slate-700">SD</div>
+                <span class="text-xs font-bold mt-2 text-slate-700">Sukhitha Dhamma</span>
+                <span class="text-xs text-blue-600 font-bold">Rs.47.9K</span>
+                <div class="bg-slate-200 w-full h-16 rounded-t-lg mt-2 shadow-inner flex items-center justify-center text-slate-400 font-extrabold text-xl">3</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white/90 pt-16 pb-8 px-6 text-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-white/10 pb-12">
+            <div class="col-span-2">
+                <span class="text-3xl text-white brand-font tracking-wider">LINZO <span class="text-blue-100 text-lg font-sans font-extrabold italic block -mt-2">Topup</span></span>
+                <p class="text-xs text-blue-100/70 mt-4 max-w-sm leading-relaxed">
+                    Sri Lanka's leading instant auto credit service provider for popular mobile esports platforms.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider text-white text-xs mb-4">EXPLORE</h5>
+                <ul class="space-y-2 text-xs font-medium text-blue-100/80">
+                    <li><a href="#" class="hover:text-white transition">ABOUT US</a></li>
+                    <li><a href="#" class="hover:text-white transition">HOW TO TOPUP</a></li>
+                    <li><a href="#" class="hover:text-white transition">SUBSCRIPTIONS & BUNDLES</a></li>
+                    <li><a href="#" class="hover:text-white transition">EVOS & LEVEL UP PASSES</a></li>
+                    <li><a href="#" class="hover:text-white transition">DIAMONDS</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider text-white text-xs mb-4">FOLLOW</h5>
+                <ul class="space-y-2 text-xs font-medium text-blue-100/80">
+                    <li><a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube mr-1"></i> Youtube</a></li>
+                    <li><a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook mr-1"></i> Facebook</a></li>
+                    <li><a href="#" class="hover:text-white transition"><i class="fa-brands fa-tiktok mr-1"></i> TikTok</a></li>
+                    <li><a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram mr-1"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase tracking-wider text-white text-xs mb-4">CONTACT US</h5>
+                <p class="text-xs text-blue-100/80 leading-relaxed">
+                    +94774881940<br>
+                    <span class="lowercase">baasil@linzotopup.com</span>
+                </p>
+                <h5 class="font-bold uppercase tracking-wider text-white text-xs mt-6 mb-3">LEGAL</h5>
+                <ul class="space-y-2 text-xs font-medium text-blue-100/80">
+                    <li><a href="#" class="hover:text-white transition">TERMS & CONDITIONS</a></li>
+                    <li><a href="#" class="hover:text-white transition">BUSINESS REGISTRATION</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[11px] text-blue-200/60 mt-6">
+            <p>ALL RIGHTS RESERVED LINZO TOPUP 2026.</p>
+            <p class="mt-2 md:mt-0">DEVELOPED BY <span class="text-white font-bold">ASHAN HIMANTHA</span></p>
+        </div>
+    </footer>
+
+    <div onclick="toggleCartDrawer(true)" class="fixed bottom-6 right-6 bg-white border border-slate-200 text-slate-800 p-4 rounded-xl shadow-2xl cursor-pointer hover:scale-105 transition z-40 flex items-center justify-center">
+        <div class="relative">
+            <i class="fa-solid fa-bag-shopping text-xl text-blue-600"></i>
+            <span id="cart-badge-count" class="absolute -top-3 -right-3 bg-red-500 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+        </div>
     </div>
-</section>
 
-<section class="services">
-    <div class="card">
-        <h3>🔥 Account Selling</h3>
-        <p>High Level IDs, Rare Collections & Verified Accounts.</p>
+    <div id="cart-drawer-overlay" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 translate-x-full transition-transform duration-300 flex flex-col justify-between p-6">
+        <div>
+            <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                <div class="flex items-center space-x-2 text-sm font-bold tracking-wider text-slate-800">
+                    <i onclick="toggleCartDrawer(false)" class="fa-solid fa-chevron-left cursor-pointer mr-1 text-slate-400 hover:text-slate-600"></i>
+                    <span>YOUR CART</span>
+                </div>
+                <i onclick="toggleCartDrawer(false)" class="fa-solid fa-xmark text-slate-400 hover:text-slate-600 text-lg cursor-pointer"></i>
+            </div>
+
+            <div id="cart-items-container" class="mt-6 space-y-4 overflow-y-auto max-h-[55vh] pr-1">
+                <p id="empty-cart-msg" class="text-slate-400 text-xs text-center py-8 font-medium">Your shopping cart is completely empty.</p>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-100 pt-4 bg-white">
+            <div class="space-y-2 text-xs font-bold text-slate-500">
+                <div class="flex justify-between">
+                    <span class="uppercase tracking-wider">SUBTOTAL</span>
+                    <span id="cart-subtotal" class="text-slate-700 font-mono">RS.0.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="uppercase tracking-wider">PROCESSING CHARGE (2%)</span>
+                    <span id="cart-charge" class="text-slate-700 font-mono">RS.0.00</span>
+                </div>
+            </div>
+            <div class="flex justify-between items-baseline mt-4 border-b border-slate-100 pb-4">
+                <span class="text-sm font-extrabold uppercase tracking-wider text-slate-800">TOTAL</span>
+                <span id="cart-total" class="text-xl font-black text-slate-900 font-mono">RS.0.00</span>
+            </div>
+            <div class="mt-4 text-center">
+                <span class="text-[10px] font-bold text-amber-500 uppercase tracking-widest block mb-2">LOGIN TO PLACE ORDERS</span>
+                <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-lg text-xs uppercase tracking-widest transition shadow">
+                    LOGIN TO CHECKOUT
+                </button>
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-        <h3>💎 Diamond Top Up</h3>
-        <p>Fast Diamond Delivery With Best Prices.</p>
-    </div>
+    <script>
+        let cart = [];
 
-    <div class="card">
-        <h3>⚡ Instant Delivery</h3>
-        <p>Safe & Secure Transactions.</p>
-    </div>
-</section>
+        function toggleCartDrawer(open) {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-drawer-overlay');
+            if (open) {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('pointer-events-none', 'opacity-0');
+            } else {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('pointer-events-none', 'opacity-0');
+            }
+        }
 
-<section class="pricing">
-    <h2>Diamond Packages</h2>
+        function addToCart(name, price) {
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.qty += 1;
+            } else {
+                cart.push({ name, price, qty: 1 });
+            }
+            updateCartUI();
+            toggleCartDrawer(true);
+        }
 
-    <div class="price-box">
-        <h3>100 Diamonds</h3>
-        <p>Rs. 250</p>
-    </div>
+        function changeQty(name, amount) {
+            const item = cart.find(item => item.name === name);
+            if (item) {
+                item.qty += amount;
+                if (item.qty <= 0) {
+                    cart = cart.filter(i => i.name !== name);
+                }
+            }
+            updateCartUI();
+        }
 
-    <div class="price-box">
-        <h3>310 Diamonds</h3>
-        <p>Rs. 700</p>
-    </div>
+        function removeItem(name) {
+            cart = cart.filter(item => item.name !== name);
+            updateCartUI();
+        }
 
-    <div class="price-box">
-        <h3>520 Diamonds</h3>
-        <p>Rs. 1100</p>
-    </div>
-</section>
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            const emptyMsg = document.getElementById('empty-cart-msg');
+            const badge = document.getElementById('cart-badge-count');
+            
+            container.innerHTML = '';
+            
+            let subtotal = 0;
+            let totalItems = 0;
 
-<footer>
-    <p>WhatsApp: 077 488 1940</p>
-    <p>© 2026 LINZO GAMING STORE</p>
-</footer>
+            if (cart.length === 0) {
+                emptyMsg.classList.remove('hidden');
+                badge.classList.add('hidden');
+                container.appendChild(emptyMsg);
+            } else {
+                emptyMsg.classList.add('hidden');
+                badge.classList.remove('hidden');
+                
+                cart.forEach(item => {
+                    subtotal += (item.price * item.qty);
+                    totalItems += item.qty;
 
+                    const itemEl = document.createElement('div');
+                    itemEl.className = "bg-slate-50 border border-slate-100 rounded-xl p-4 flex items-center justify-between relative group";
+                    itemEl.innerHTML = `
+                        <i onclick="removeItem('${item.name}')" class="fa-solid fa-xmark text-slate-300 hover:text-red-500 absolute top-2 right-2 text-xs cursor-pointer transition"></i>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-500"><i class="fa-solid fa-box"></i></div>
+                            <div>
+                                <h5 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">${item.name}</h5>
+                                <p class="text-sm font-extrabold text-blue-600 font-mono mt-0.5">RS.${(item.price * item.qty).toFixed(2)}</p>
+                                <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mt-0.5">${item.qty} X ${item.name}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center border border-slate-200 bg-white rounded-lg overflow-hidden">
+                            <button onclick="changeQty('${item.name}', -1)" class="px-2.5 py-1 text-slate-500 hover:bg-slate-50 font-bold text-xs transition">-</button>
+                            <span class="px-2 font-mono text-xs font-bold text-slate-700 bg-slate-50/50">${item.qty}</span>
+                            <button onclick="changeQty('${item.name}', 1)" class="px-2.5 py-1 text-slate-500 hover:bg-slate-50 font-bold text-xs transition">+</button>
+                        </div>
+                    `;
+                    container.appendChild(itemEl);
+                });
+                badge.innerText = totalItems;
+            }
+
+            // Calculations corresponding to image logic rules
+            const processingCharge = subtotal * 0.02;
+            const finalTotal = subtotal + processingCharge;
+
+            document.getElementById('cart-subtotal').innerText = `RS.${subtotal.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById('cart-charge').innerText = `RS.${processingCharge.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+            document.getElementById('cart-total').innerText = `RS.${finalTotal.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+        }
+    </script>
 </body>
 </html>
